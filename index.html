@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CTD // OIX – ACCESO RESTRINGIDO</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="access-screen">
+  <div class="scanlines"></div>
+
+  <div class="terminal">
+    <pre class="ascii-logo">
+  ████████ ███████ ██████  ██████   █████      ██
+     ██    ██      ██   ██ ██   ██ ██   ██    ███
+     ██    █████   ██████  ██████  ███████     ██
+     ██    ██      ██   ██ ██   ██ ██   ██     ██
+     ██    ███████ ██   ██ ██   ██ ██   ██ ██████
+    </pre>
+
+    <p class="warning">// SISTEMA CLASIFICADO – NIVEL 5 – ACCESO RESTRINGIDO //</p>
+
+    <p class="line">> COALICIÓN TERRESTRE DE DEFENSA</p>
+    <p class="line">> OFICINA DE INTELIGENCIA XAR'KETH (OIX)</p>
+    <p class="line">> INTRODUZCA CÓDIGO DE AUTENTICACIÓN:</p>
+
+    <form id="access-form">
+      <input type="text" id="access-code" placeholder="XXXX-XXXX-XXXX-XXXX" autocomplete="off" autofocus>
+      <button type="submit">VERIFICAR</button>
+    </form>
+
+    <p id="access-message"></p>
+
+    <p class="footer-warning">
+      ADVERTENCIA: TODO ACCESO NO AUTORIZADO SERÁ REGISTRADO.
+      SI ESTÁ LEYENDO ESTO SIN AUTORIZACIÓN, CIERRE LA PÁGINA INMEDIATAMENTE.
+      EL TIEMPO SE AGOTA.
+    </p>
+  </div>
+
+  <script src="js/access.js"></script>
+</body>
+</html>
